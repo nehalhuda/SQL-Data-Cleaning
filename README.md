@@ -47,29 +47,8 @@ WITH CTE_Duplicates AS (
                ORDER BY company
            ) AS row_num
     FROM layoffs_staging2
-)
+**)
 DELETE
 FROM CTE_Duplicates
 WHERE row_num > 1;
-
-2. Find the top 5 industries with the most layoffs:
-SELECT industry, SUM(total_laid_off) AS total_layoffs
-FROM layoffs_staging2
-GROUP BY industry
-ORDER BY total_layoffs DESC
-LIMIT 5;
-
-🚀 How to Run
-Clone this repository:
-git clone https://github.com/yourusername/sql-project.git
-Load the .sql files into your SQL environment (MySQL, PostgreSQL, etc.).
-Run schema.sql and inserts.sql to create and populate the tables.
-Run cleaning.sql and analysis.sql to reproduce the results.
-
-📌 Key Takeaways
--Learned how to clean, structure, and analyze real-world style data in SQL.
--Gained experience with both basic SQL queries and advanced features like CTEs and window functions.
--Produced actionable insights from a messy dataset.
-
-
 
