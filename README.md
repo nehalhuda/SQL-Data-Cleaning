@@ -34,21 +34,5 @@ sql-project/
 - **Window Functions**
   - Ranking and running totals  
 
----
 
-## 📊 Example Queries  
-
-**1. Remove duplicate rows:**  
-```sql
-WITH CTE_Duplicates AS (
-    SELECT *,
-           ROW_NUMBER() OVER (
-               PARTITION BY company, location, industry
-               ORDER BY company
-           ) AS row_num
-    FROM layoffs_staging2
-**)
-DELETE
-FROM CTE_Duplicates
-WHERE row_num > 1;
 
