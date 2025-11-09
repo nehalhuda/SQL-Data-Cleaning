@@ -10,13 +10,15 @@ This project reflects how SQL can be used for both **data engineering** and **da
 ---
 
 ## 🗂️ Project Structure
-```plaintext
-sql-project/
-├── schema.sql        # Table creation and schema definition
-├── inserts.sql       # Sample data population script
-├── cleaning.sql      # Data cleaning and transformation queries
-├── analysis.sql      # Analytical and exploratory SQL queries
-└── README.md         # Project documentation
+
+**Project Directory**
+`sql-project/
+│
+├── schema.sql # Table creation and schema definition
+├── inserts.sql # Sample data population script
+├── cleaning.sql # Data cleaning and transformation queries
+├── analysis.sql # Analytical and exploratory SQL queries
+└── README.md # Project documentation`
 
 ---
 
@@ -63,13 +65,13 @@ sql-project/
    ```bash
    git clone https://github.com/<your-username>/sql-data-cleaning-project.git
    cd sql-data-cleaning-project
+   
+2.Import SQL files into your MySQL or PostgreSQL environment.
 
-2. Import SQL files into your MySQL or PostgreSQL environment.
-
-3. Run scripts in order:
+3.Run scripts in order:
 schema.sql,
 inserts.sql,
 cleaning.sql,
 analysis.sql,
 
-4. Explore and modify queries to perform your own analysis or connect results to visualization tools like Power BI or Tableau.
+4.Explore and modify queries to perform your own analysis or connect results to visualization tools like Power BI or Tableau.
